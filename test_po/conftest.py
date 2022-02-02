@@ -4,7 +4,7 @@ import pytest
 
 
 @pytest.fixture(scope='session')
-def browser():
+def driver():
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--headless')
